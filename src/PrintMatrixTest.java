@@ -3,7 +3,29 @@ import java.util.ArrayList;
 /**
  * Created by toryang on 16/3/10.
  */
+
+/**
+ * 题目描述:
+ * 输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字，
+ * 例如，如果输入如下矩阵：
+ *  1  2  3  4
+ *  5  6  7  8
+ *  9 10 11 12
+ * 13 14 15 16
+ * 则依次打印出数字1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10.
+ *
+ */
 public class PrintMatrixTest {
+    /**
+     * 解题思路:
+     * 找到左上角和右下角元素的坐标,依次顺时针打印第一圈;
+     * 左上角元素加1,右下角元素减1;
+     * 按照第一步的方法打印第二圈元素;
+     * 直到左上角元素坐标值大于右下角坐标值;
+     *
+     * @param matrix
+     * @return
+     */
 
     public static ArrayList<Integer> printMatrix(int[][] matrix) {
 

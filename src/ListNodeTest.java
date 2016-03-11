@@ -3,6 +3,11 @@ import java.util.Stack;
 /**
  * Created by toryang on 16/3/10.
  */
+
+/**
+ * 题目描述:
+ * 输出链表中倒数第K个节点
+ */
 public class ListNodeTest {
     /**
      * 使用栈;

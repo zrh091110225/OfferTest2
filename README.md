@@ -19,7 +19,7 @@
 **描述:**  
 输出链表中倒数第k个节点;
 
-**解题思路:**
+**解题思路:** [代码](https://github.com/ToryangChen/OfferTest2/blob/master/src/ListNodeTest.java)
 
 解法一: 使用栈,该方法会消耗较大资源,不建议使用;
 解法二: 先复制两个节点,第一个节点从头走到k的位置; 然后两个节点以前执行.next,当第一个节点走到链表尾时,第二个节点即走到倒数k的位置;(该解法时间复杂度只有O(n),目前为止最佳解法)
@@ -29,12 +29,14 @@
 **描述:**  
 输入一个链表，反转链表后，输出链表的所有元素。
 
+[代码](https://github.com/ToryangChen/OfferTest2/blob/master/src/ListNodeReverse.java)
+
 ### 题目四 合并两个排序的链表
 
 **描述:**  
 输入两个单调递增的链表，输出两个链表合成后的链表，当然我们需要合成后的链表满足单调不减规则。
 
-**解题思路:**
+**解题思路:** [代码](https://github.com/ToryangChen/OfferTest2/blob/master/src/MergeNode.java)
 
  * 定义一个新的链表listnode;
  * 判断list1和list2的val值,那个小就让listnode的next指向哪个节点;
@@ -47,7 +49,7 @@
 **描述:**  
 输入两颗二叉树A，B，判断B是不是A的子结构。
 
-**解题思路:**
+**解题思路:**[代码](https://github.com/ToryangChen/OfferTest2/blob/master/src/HasSubTreeTest.java)  
 依旧递归:使用两次递归;
 
  * 在树A中找到和B的根节点的值一样的结点R；第一次递归
@@ -74,7 +76,7 @@
     	 / \  / \
     	11 9 7  5
 
-**解题思路:**  
+**解题思路:** [代码](https://github.com/ToryangChen/OfferTest2/blob/master/src/MirrorTreeNode.java)  
 千年递归:
 
  * 从叶子节点互换;
@@ -92,7 +94,7 @@
 则依次打印出数字1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10.
 
 
-**解题思路:**
+**解题思路:** [代码](https://github.com/ToryangChen/OfferTest2/blob/master/src/PrintMatrixTest.java)
 
  * 找到左上角和右下角元素的坐标,依次顺时针打印第一圈;
  * 左上角元素加1,右下角元素减1;
@@ -104,7 +106,7 @@
 **描述:**  
 定义栈的数据结构，请在该类型中实现一个能够得到栈最小元素的min函数;
 
-**解题思路:**
+**解题思路:** [代码](https://github.com/ToryangChen/OfferTest2/blob/master/src/GetMinStack.java)
 
  * 使用两个栈,data栈存需要存储的元素,min栈存小元素;
  * push栈的时候,元素存进data栈,如果该元素小于上一个存入的元素,则存入min栈,否则不如min栈;
@@ -117,7 +119,7 @@
 **描述:**  
 输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否为该栈的弹出顺序。假设压入栈的所有数字均不相等。例如序列1,2,3,4,5是某栈的压入顺序，序列4，5,3,2,1是该压栈序列对应的一个弹出序列，但4,3,5,1,2就不可能是该压栈序列的弹出序列。
 
-**解题思路:**
+**解题思路:** [代码](https://github.com/ToryangChen/OfferTest2/blob/master/src/PopOrder.java)
 
  * 按照栈的压入顺序将元素依次压入栈;
  * 入栈过程中同时按照弹出顺序出栈,如果栈顶元素等于出栈的顺序元素,则,出栈;
@@ -128,7 +130,7 @@
 **描述:**  
 从上往下打印出二叉树的每个节点，同层节点从左至右打印。
 
-**解题思路:**
+**解题思路:**[代码](https://github.com/ToryangChen/OfferTest2/blob/master/src/PrintTreeNode.java)  
 该题目即为二叉树的层序遍历: 使用队列解决;
  
  * 将二叉树的跟节点赋给LinkedList<TreeNode>队列;
@@ -140,7 +142,7 @@
 **描述:**  
 输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历的结果。如果是则输出Yes,否则输出No。假设输入的数组的任意两个数字都互不相同。
 
-**解题思路:**
+**解题思路:**[代码](https://github.com/ToryangChen/OfferTest2/blob/master/src/VeriftyBST.java)  
  
  * 二叉搜索数,左子树的值都小于右子树的值
  * 后序遍历,数组最后一个数字为跟节点;
